@@ -1,0 +1,438 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Título de tu API",
+    "contact": {
+      "name": "Amva",
+      "url": "http://ejemplo.com",
+      "email": "amva@gmail.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://springdoc.org"
+    },
+    "version": "v1"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:4000",
+      "description": "Generated server url"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Controlador de Cliente",
+      "description": "Endpoints entidad Cliente"
+    },
+    {
+      "name": "Controlador de Cuenta",
+      "description": "Endpoints entidad Cuenta"
+    }
+  ],
+  "paths": {
+    "/cuentas/{id}/retirar": {
+      "put": {
+        "tags": [
+          "Controlador de Cuenta"
+        ],
+        "operationId": "RetiraCuentaById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "number",
+                "format": "float"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/cuentas/{id}/depositar": {
+      "put": {
+        "tags": [
+          "Controlador de Cuenta"
+        ],
+        "operationId": "DepositaCuentaById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "number",
+                "format": "float"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/clientes/{id}": {
+      "get": {
+        "tags": [
+          "Controlador de Cliente"
+        ],
+        "operationId": "getClienteById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClienteModel"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Controlador de Cliente"
+        ],
+        "operationId": "updateClienteById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ClienteModel"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClienteModel"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Controlador de Cliente"
+        ],
+        "operationId": "deleteClienteById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/cuentas": {
+      "get": {
+        "tags": [
+          "Controlador de Cuenta"
+        ],
+        "operationId": "getCLientes",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CuentaModel"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Controlador de Cuenta"
+        ],
+        "operationId": "saveCuenta",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CuentaModel"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/CuentaModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/clientes": {
+      "get": {
+        "tags": [
+          "Controlador de Cliente"
+        ],
+        "operationId": "getCLientes_1",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ClienteModel"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Controlador de Cliente"
+        ],
+        "operationId": "saveCliente",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ClienteModel"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClienteModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/cuentas/{id}": {
+      "get": {
+        "tags": [
+          "Controlador de Cuenta"
+        ],
+        "operationId": "getCuentaById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/CuentaModel"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Controlador de Cuenta"
+        ],
+        "operationId": "deleteCuentaById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ClienteModel": {
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string"
+          },
+          "apellido": {
+            "type": "string"
+          },
+          "dni": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "clienteId": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "CuentaModel": {
+        "type": "object",
+        "properties": {
+          "numeroCuenta": {
+            "type": "string"
+          },
+          "saldo": {
+            "type": "number",
+            "format": "float"
+          },
+          "tipo_id": {
+            "$ref": "#/components/schemas/TipoCuentaModel"
+          },
+          "cliente_id": {
+            "$ref": "#/components/schemas/ClienteModel"
+          },
+          "tipoId": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "TipoCuentaModel": {
+        "type": "object",
+        "properties": {
+          "tipoId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "desripcion": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

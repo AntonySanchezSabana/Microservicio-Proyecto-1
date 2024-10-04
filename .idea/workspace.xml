@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b7c4e75f-545e-49b0-9dce-0308e8e09206" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Api Crud Java JPA SPring.postman_collection.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Diagrama de casos de uso para proyecto 1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Diagrama de componentes para el proyecto1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Diagrama de secuencia para el proyecto1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Proyecto 1 actualizado/CrudMicroJPASpringBoot/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Proyecto 1 actualizado/CrudMicroJPASpringBoot/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Proyecto 1 actualizado/CrudMicroJPASpringBoot/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Proyecto 1 actualizado/CrudMicroJPASpringBoot/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Proyecto 1 actualizado/CrudMicroJPASpringBoot/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Proyecto 1 actualizado/CrudMicroJPASpringBoot/src/main/java/com/api/crud/CrudApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Proyecto 1 actualizado/CrudMicroJPASpringBoot/src/main/java/com/api/crud/config/OpenApiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Proyecto 1 actualizado/CrudMicroJPASpringBoot/src/main/java/com/api/crud/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Proyecto 1 actualizado/CrudMicroJPASpringBoot/src/main/java/com/api/crud/controllers/ClienteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Proyecto 1 actualizado/CrudMicroJPASpringBoot/src/main/java/com/api/crud/controllers/CuentaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Proyecto 1 actualizado/CrudMicroJPASpringBoot/src/main/java/com/api/crud/exceptions/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Proyecto 1 actualizado/CrudMicroJPASpringBoot/src/main/java/com/api/crud/models/ClienteModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Proyecto 1 actualizado/CrudMicroJPASpringBoot/src/main/java/com/api/crud/models/CuentaModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Proyecto 1 actualizado/CrudMicroJPASpringBoot/src/main/java/com/api/crud/models/TipoCuentaModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Proyecto 1 actualizado/CrudMicroJPASpringBoot/src/main/java/com/api/crud/repositories/IClienteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Proyecto 1 actualizado/CrudMicroJPASpringBoot/src/main/java/com/api/crud/repositories/ICuentaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Proyecto 1 actualizado/CrudMicroJPASpringBoot/src/main/java/com/api/crud/services/ClienteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Proyecto 1 actualizado/CrudMicroJPASpringBoot/src/main/java/com/api/crud/services/CuentaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Proyecto 1 actualizado/CrudMicroJPASpringBoot/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Proyecto 1 actualizado/CrudMicroJPASpringBoot/src/test/java/com/api/crud/CrudApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bdSabanaClienteCuentas.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi proyecto 1.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2mzCU6LDbmfZCEHciGjjxXTNcHy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b7c4e75f-545e-49b0-9dce-0308e8e09206" name="Changes" comment="" />
+      <created>1728070032594</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728070032594</updated>
+    </task>
+    <servers />
+  </component>
+</project>

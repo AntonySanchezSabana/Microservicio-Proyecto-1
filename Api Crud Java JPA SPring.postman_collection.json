@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "dfa8c108-6487-4b6d-95b1-f5ff2fba558b",
+		"name": "Api Crud Java JPA SPring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "18744954"
+	},
+	"item": [
+		{
+			"name": "getClientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:4000/clientes"
+			},
+			"response": []
+		},
+		{
+			"name": "getClienteById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:4000/clientes/1"
+			},
+			"response": []
+		},
+		{
+			"name": "PostClientes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"nombre\":\"Josue\", \r\n\"apellido\":\"Fernandez\",\r\n\"dni\":\"70869453\",\r\n\"email\":\"jml@hotmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/clientes"
+			},
+			"response": []
+		},
+		{
+			"name": "PutClientes",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"nombre\":\"Luis\", \r\n\"apellido\":\"Sanchez\",\r\n\"dni\":\"70845263\",\r\n\"email\":\"LaSanchezsdfsdfsdf@hotmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/clientes/1"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteClienteById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:4000/clientes/8"
+			},
+			"response": []
+		},
+		{
+			"name": "_getCuentas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:4000/cuentas"
+			},
+			"response": []
+		},
+		{
+			"name": "_getCuentasById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:4000/cuentas/3"
+			},
+			"response": []
+		},
+		{
+			"name": "_PostCuentas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numeroCuenta\": \"8009564215\",\r\n    \"saldo\": 45000,\r\n    \"cliente_id\": {\r\n        \"clienteId\": 1\r\n    },\r\n    \"tipo_id\": {\r\n        \"tipoId\": 1\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/cuentas"
+			},
+			"response": []
+		},
+		{
+			"name": "_DepositarCuentasById",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "http://localhost:4000/cuentas/3"
+			},
+			"response": []
+		},
+		{
+			"name": "_RetirarCuentasById",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "200",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/cuentas/3/retirar"
+			},
+			"response": []
+		},
+		{
+			"name": "_DeleteCuentasById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:4000/cuentas/11"
+			},
+			"response": []
+		}
+	]
+}
